@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT</title>
+    <link rel="stylesheet" , href   ="./index.css">
+    <!-- these are another links(cdn links) which are used to include versions of react  -->
+    <!-- <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script> -->
+
+</head>
+<body>
+    <div id="root">
+        <!-- this h1 tag will be replaced by objects(tags that we rendered) -->
+       
+    </div>
+    <h1>HI Kumar </h1>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js"></script>
+<!-- order of this files i.e script files matters -->
+<script>
+    const root = document.getElementById('root');
+    const child = document.createElement('h1');
+    child.innerHTML="HI pavan";
+    root.appendChild(child);
+</script>
+</body>
+</html>
